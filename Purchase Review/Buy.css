@@ -1,0 +1,107 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; /* أرضية رصاصي غامق جداً */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Card */
+.container {
+    background-color: #1e1e1e; /* رصاصي غامق للكارت الرئيسي */
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Page Title */
+h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Product Details Card Layout */
+.product {
+    background-color: #2a2a2a;
+    border: 1px solid #444444;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+/* Product Image Styling */
+.product img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #555555;
+}
+
+/* Product Info Text */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.product-info h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #b0b0b0; /* رصاصي فاتح للبيانات */
+}
+
+.product-info h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 6px;
+}
+
+/* Confirm Purchase Button (Green as Required by Task) */
+.confirm-btn {
+    display: block;
+    width: 100%;
+    background-color: #16a34a; /* لون أخضر جذاب حسب المتطلبات */
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.confirm-btn:hover {
+    background-color: #15803d; /* أخضر أغمق عند الـ Hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.4);
+}

@@ -1,0 +1,82 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; /* أرضية رصاصي غامق جداً */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Thank You Container Card */
+.thank-container {
+    background-color: #1e1e1e; /* كارت برصاصي غامق */
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Green Checkmark Icon Styling */
+.check {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(22, 163, 74, 0.15); /* خلفية خضراء هادئة */
+    color: #16a34a; /* لون العلامة أخضر */
+    border: 2px solid #16a34a;
+    border-radius: 50%;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Heading & Paragraph */
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #b0b0b0; /* رصاصي فاتح للرسالة */
+    margin-bottom: 30px;
+}
+
+/* Home Page Button */
+.home-btn {
+    display: block;
+    width: 100%;
+    background-color: #d1d5db; /* زر برصاصي فاتح */
+    color: #111111;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.home-btn:hover {
+    background-color: #ffffff; /* يتحول لأبيض عند الـ Hover */
+    color: #000000;
+    transform: translateY(-2px);
+}

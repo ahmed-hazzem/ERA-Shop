@@ -1,0 +1,142 @@
+body.help-page {
+    background-color: #121212; 
+    color: #ffffff; 
+    direction: ltr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.help-page .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px 5%;
+    border-bottom: 1px solid #333333;
+}
+
+body.help-page .navbar .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+body.help-page .nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+body.help-page .nav-links a:hover,
+body.help-page .nav-links a.active {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #242424;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-item summary {
+    background-color: #d1d5db; /* Light Gray Button */
+    color: #111111;
+    padding: 18px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "▼";
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.faq-item summary:hover {
+    background-color: #ffffff; /* White on Hover */
+    color: #000000;
+}
+
+.faq-item p {
+    padding: 20px;
+    color: #e0e0e0;
+    line-height: 1.7;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333333;
+    margin: 0;
+}
+
+.support-action {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    border: 1px solid #333333;
+}
+
+.support-action p {
+    margin-bottom: 15px;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+.btn-support {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #d1d5db; /* Light Gray */
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-support:hover {
+    background-color: #ffffff; /* White on Hover */
+    color: #000000;
+}
