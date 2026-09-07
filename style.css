@@ -178,6 +178,9 @@ header {
     background-color: #00adb5;
 }
 @media (max-width: 600px) {
+    .product{
+        opacity: 1;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -213,6 +216,11 @@ header {
     }
     .footer {
         font-size: 14px;
+    }
+    .products h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        margin-top: 25px;
     }
 }
 
